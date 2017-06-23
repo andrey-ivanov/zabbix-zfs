@@ -1,0 +1,4 @@
+# Allows to sudo zabbix-zfs.sh without password for zabbix
+Cmnd_Alias ZABBIX_ZFS = /usr/local/bin/zabbix-zfs.sh
+zabbix	ALL=(root)	NOPASSWD: ZABBIX_ZFS
+Defaults!ZABBIX_ZFS !syslog
